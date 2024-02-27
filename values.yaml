@@ -1,0 +1,26 @@
+replicaCount: 1
+name: hicard
+image: ghcr.io/hicard-in/hicard-be:latest
+gateway: "vishal-gateway"
+host: "'*'"
+configMapData:
+  HOST: '0.0.0.0'
+  PORT: '1337'
+  APP_KEYS: kSgPEHp5urnhiE+hiu7c4A==,HBhEiXrbfaf3aoEoCDTv1A==,oyWpNz/vA2EOdT7ULmLORQ==,S9OPs36TsLrt1WSjnqrI3A==
+  API_TOKEN_SALT: Q93qXSvsCONMxvHw1a0VPQ==
+  ADMIN_JWT_SECRET: jsDi9oftP0NbdM0uoGVinA==
+  JWT_SECRET: OI+qLIzMqx5EUZvJTENRhw==
+  DATABASE_HOST: '192.168.1.54'
+  DATABASE_PORT: '3306'
+  DATABASE_USERNAME: root
+  DATABASE_PASSWORD: password
+  DATABASE_NAME: card
+  DATABASE_CLIENT: sqlite
+
+  CF_ENDPOINT: ""
+  CF_ACCESS_KEY_ID: ""
+  CF_ACCESS_SECRET: ""
+  CF_BUCKET: ""
+  CF_PUBLIC_ACCESS_URL: ""
+  CF_TOKEN_VALUE: ""
+  CF_ENDPOINT_ABS: ""
