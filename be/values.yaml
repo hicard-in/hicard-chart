@@ -1,8 +1,8 @@
 replicaCount: 1
-name: hicard
+name: hicard-be
 image: ghcr.io/hicard-in/hicard-be:latest
 gateway: "vishal-gateway"
-host: "'*'"
+host: "'api.hicard.int'"
 configMapData:
   HOST: '0.0.0.0'
   PORT: '1337'
