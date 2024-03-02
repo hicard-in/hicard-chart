@@ -1,0 +1,8 @@
+replicaCount: 1
+name: hicard-ui
+image: ghcr.io/hicard-in/hicard-ui:latest
+gateway: "vishal-gateway"
+host: "'hicard.int'"
+configMapData:
+  HOST: '0.0.0.0'
+  PORT: '4000'
